@@ -8,7 +8,7 @@ useEffect(()=>{
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(res=>res.json())
     .then(data=>setUser(data.splice(0,count)))
-})
+},[])
 function add(){
     const add = count +1
 setCount(add)
